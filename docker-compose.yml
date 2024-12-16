@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  llm-research:
+    build: .
+    # runtime: nvidia
+    # environment:
+    #   - NVIDIA_VISIBLE_DEVICES=all
+    volumes:
+      - .:/app
+    tty: true
+    # command: ["jupyter", "notebook", "--ip=0.0.0.0", "--no-browser", "--allow-root"]
